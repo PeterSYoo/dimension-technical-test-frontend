@@ -18,7 +18,7 @@ export const Header = () => {
               />
             </div>
             <p className="font-medium text-sm text-[#6C6F75]">Cloud Platform</p>
-            <span className="ml-[6px] text-xs bg-[#EEEEEE] px-[6px] text-[#6C6F75] py-[2px] rounded-md">
+            <span className="ml-[6px] text-xs bg-[#EEEEEE] px-[6px] text-[#6C6F75] py-[2px] rounded-[5px]">
               FLYTE
             </span>
           </div>
@@ -26,7 +26,7 @@ export const Header = () => {
           {/* Search & SideBar Icon */}
           <div className="flex items-center gap-[12px]">
             {/* Search */}
-            <div className="w-[175px] h-[32px] bg-[#EFEFEF] rounded-md p-[8px] flex gap-[8px] items-center">
+            <div className="w-[175px] h-[32px] bg-[#EFEFEF] rounded-lg p-[8px] flex gap-[8px] items-center">
               <div>
                 <Image
                   src="https://res.cloudinary.com/dryh1nvhk/image/upload/v1675640411/dimension-technical-test-frontend/header/akar-icons_search_pksmgx.png"
@@ -45,7 +45,7 @@ export const Header = () => {
             </div>
             {/*  */}
             {/* SideBar Icon */}
-            <button className="w-[32px] h-[32px] border border-[#DFE1E4] rounded-md">
+            <button className="w-[32px] h-[32px] border border-[#DFE1E4] rounded-lg">
               <div className="flex justify-center items-center h-full">
                 <Image
                   src="https://res.cloudinary.com/dryh1nvhk/image/upload/v1675640411/dimension-technical-test-frontend/header/bi_layout-sidebar-reverse_wpyibj.png"
@@ -64,7 +64,7 @@ export const Header = () => {
         <div className="w-full h-[47px] border-b border-[#F4F4F4] px-[24px] flex justify-between items-center">
           <div className="flex items-center gap-[6px] -mt-[3px]">
             {/* Cloud Button */}
-            <button className="w-[68px] h-[30px] border border-[#DFE1E4] rounded-md px-[8px] py-[6px] gap-[6px] flex items-center shadow-[0_3px_0px_0px_rgba(223,225,228,1)] hover:shadow-none hover:mt-[3px]">
+            <button className="w-[68px] h-[30px] border border-[#DFE1E4] rounded-lg px-[8px] py-[6px] gap-[6px] flex items-center shadow-[0_3px_0px_0px_rgba(223,225,228,1)] hover:shadow-none hover:mt-[3px]">
               <div>
                 <Image
                   src="https://res.cloudinary.com/dryh1nvhk/image/upload/v1675640411/dimension-technical-test-frontend/header/akar-icons_cloud_tin89x.png"
@@ -77,7 +77,7 @@ export const Header = () => {
             </button>
             {/*  */}
             {/* Filter Button */}
-            <button className="w-[57px] h-[30px] border border-[#DFE1E4] rounded-md shadow-[0_3px_0px_0px_rgba(223,225,228,1)] hover:shadow-none hover:mt-[3px]">
+            <button className="w-[57px] h-[30px] border border-[#DFE1E4] rounded-lg shadow-[0_3px_0px_0px_rgba(223,225,228,1)] hover:shadow-none hover:mt-[3px]">
               <span className="text-sm text-[#6C6F75]">Filter</span>
             </button>
             {/*  */}
@@ -105,7 +105,7 @@ export const Header = () => {
             {/*  */}
             <div className="flex items-center gap-[6px] -mt-[3px]">
               {/* List or Grid Button */}
-              <button className="w-[70px] h-[30px] border border-[#DFE1E4] rounded-md pl-[6px] pr-[12px] shadow-[0_3px_0px_0px_rgba(223,225,228,1)] hover:shadow-none hover:mt-[3px]">
+              <button className="w-[70px] h-[30px] border border-[#DFE1E4] rounded-lg pl-[6px] pr-[12px] shadow-[0_3px_0px_0px_rgba(223,225,228,1)] hover:shadow-none hover:mt-[3px]">
                 <div className="flex items-center w-full">
                   <div className="flex justify-between w-full max-w-[29px] items-center">
                     <span className="w-[22px] h-[20px] bg-[#DFE1E4] rounded">
@@ -134,7 +134,7 @@ export const Header = () => {
               </button>
               {/*  */}
               {/* Audio Button */}
-              <button className="w-[38px] h-[28px] border border-[#DFE1E4] rounded-md shadow-[0_3px_0px_0px_rgba(223,225,228,1)] hover:shadow-none hover:mt-[3px]">
+              <button className="w-[38px] h-[28px] border border-[#DFE1E4] rounded-lg shadow-[0_3px_0px_0px_rgba(223,225,228,1)] hover:shadow-none hover:mt-[3px]">
                 <div className="flex justify-center items-center h-full">
                   <Image
                     src="https://res.cloudinary.com/dryh1nvhk/image/upload/v1675640411/dimension-technical-test-frontend/header/headphones_fxgztd.png"
@@ -146,7 +146,7 @@ export const Header = () => {
               </button>
               {/*  */}
               {/* Share Button */}
-              <button className="w-[74px] h-[28px] border border-[#DFE1E4] rounded-md shadow-[0_3px_0px_0px_rgba(223,225,228,1)] hover:shadow-none hover:mt-[3px]">
+              <button className="w-[74px] h-[28px] border border-[#DFE1E4] rounded-lg shadow-[0_3px_0px_0px_rgba(223,225,228,1)] hover:shadow-none hover:mt-[3px]">
                 <div className="flex items-center gap-[6px] justify-center">
                   <Image
                     src="https://res.cloudinary.com/dryh1nvhk/image/upload/v1675640411/dimension-technical-test-frontend/header/chain_ej1hsr.png"
