@@ -13,7 +13,7 @@ export const initialData = {
         'https://res.cloudinary.com/dryh1nvhk/image/upload/v1675757030/dimension-technical-test-frontend/kanban-columns/todo/add_ap01pj.png',
       cards: [
         {
-          id: 'FLYTE-1',
+          id: 1,
           title: 'UX Adjustments',
           previewImage: '',
           imageWidth: 0,
@@ -36,7 +36,7 @@ export const initialData = {
           status: 'TODO',
         },
         {
-          id: 'FLYTE-2',
+          id: 2,
           title: 'Moodboards',
           previewImage:
             'https://res.cloudinary.com/dryh1nvhk/image/upload/v1675808710/dimension-technical-test-frontend/kanban-columns/todo/moodboards/moodboard-preview_hqfzo2.png',
@@ -74,7 +74,7 @@ export const initialData = {
         'https://res.cloudinary.com/dryh1nvhk/image/upload/v1675757030/dimension-technical-test-frontend/kanban-columns/todo/add_ap01pj.png',
       cards: [
         {
-          id: 'FLYTE-3',
+          id: 3,
           title: 'Dashboard Design',
           previewImage:
             'https://res.cloudinary.com/dryh1nvhk/image/upload/v1675809488/dimension-technical-test-frontend/kanban-columns/in-progress/dashboard-design/dashboard-design-preview_qstu28.png',
@@ -95,10 +95,10 @@ export const initialData = {
           },
           numberOfLinks: '1',
           dateCreated: 'Jun 20',
-          status: 'TODO',
+          status: 'IN PROGRESS',
         },
         {
-          id: 'FLYTE-4',
+          id: 4,
           title: 'Design System',
           previewImage: '',
           imageWidth: 0,
@@ -119,7 +119,7 @@ export const initialData = {
           },
           numberOfLinks: '0',
           dateCreated: 'May 20',
-          status: 'TODO',
+          status: 'IN PROGRESS',
         },
       ],
     },
@@ -136,7 +136,7 @@ export const initialData = {
         'https://res.cloudinary.com/dryh1nvhk/image/upload/v1675757030/dimension-technical-test-frontend/kanban-columns/todo/add_ap01pj.png',
       cards: [
         {
-          id: 'FLYTE-5',
+          id: 5,
           title: 'Presentation',
           previewImage: '',
           imageWidth: 0,
@@ -158,7 +158,7 @@ export const initialData = {
           status: 'COMPLETED',
         },
         {
-          id: 'FLYTE-6',
+          id: 6,
           title: 'Brainstorming',
           previewImage: '',
           imageWidth: 0,
@@ -185,100 +185,40 @@ export const initialData = {
       id: 'column-4',
       columnIcon:
         'https://res.cloudinary.com/dryh1nvhk/image/upload/v1675640424/dimension-technical-test-frontend/kanban-columns/todo/todo-icon_uge29o.png',
-      title: 'FAKE COLUMN',
+      title: 'FAKE COLUMN 1',
       addGrayIcon:
         'https://res.cloudinary.com/dryh1nvhk/image/upload/v1675751048/dimension-technical-test-frontend/kanban-columns/todo/add_mujhqc.png',
       dotsIcon:
         'https://res.cloudinary.com/dryh1nvhk/image/upload/v1675751198/dimension-technical-test-frontend/kanban-columns/todo/heroicons-solid_dots-horizontal_yf6zy7.png',
       addPurpleIcon:
         'https://res.cloudinary.com/dryh1nvhk/image/upload/v1675757030/dimension-technical-test-frontend/kanban-columns/todo/add_ap01pj.png',
-      cards: [
-        {
-          id: 'FLYTE-0',
-          title: '',
-          previewImage: '',
-          imageWidth: 0,
-          imageHeight: 0,
-          description: '',
-          topic: '',
-          users: [],
-          extraUsers: null,
-          numberOfComments: '0',
-          numberOfChecks: {
-            checked: '0',
-            total: '',
-          },
-          numberOfLinks: '0',
-          dateCreated: '',
-          status: '',
-        },
-      ],
+      cards: [],
     },
     {
       id: 'column-5',
       columnIcon:
         'https://res.cloudinary.com/dryh1nvhk/image/upload/v1675640424/dimension-technical-test-frontend/kanban-columns/todo/todo-icon_uge29o.png',
-      title: 'FAKE COLUMN',
+      title: 'FAKE COLUMN 2',
       addGrayIcon:
         'https://res.cloudinary.com/dryh1nvhk/image/upload/v1675751048/dimension-technical-test-frontend/kanban-columns/todo/add_mujhqc.png',
       dotsIcon:
         'https://res.cloudinary.com/dryh1nvhk/image/upload/v1675751198/dimension-technical-test-frontend/kanban-columns/todo/heroicons-solid_dots-horizontal_yf6zy7.png',
       addPurpleIcon:
         'https://res.cloudinary.com/dryh1nvhk/image/upload/v1675757030/dimension-technical-test-frontend/kanban-columns/todo/add_ap01pj.png',
-      cards: [
-        {
-          id: 'FLYTE-0',
-          title: '',
-          previewImage: '',
-          imageWidth: 0,
-          imageHeight: 0,
-          description: '',
-          topic: '',
-          users: [],
-          extraUsers: null,
-          numberOfComments: '0',
-          numberOfChecks: {
-            checked: '0',
-            total: '',
-          },
-          numberOfLinks: '0',
-          dateCreated: '',
-          status: '',
-        },
-      ],
+      cards: [],
     },
     {
       id: 'column-6',
       columnIcon:
         'https://res.cloudinary.com/dryh1nvhk/image/upload/v1675640424/dimension-technical-test-frontend/kanban-columns/todo/todo-icon_uge29o.png',
-      title: 'FAKE COLUMN',
+      title: 'FAKE COLUMN 3',
       addGrayIcon:
         'https://res.cloudinary.com/dryh1nvhk/image/upload/v1675751048/dimension-technical-test-frontend/kanban-columns/todo/add_mujhqc.png',
       dotsIcon:
         'https://res.cloudinary.com/dryh1nvhk/image/upload/v1675751198/dimension-technical-test-frontend/kanban-columns/todo/heroicons-solid_dots-horizontal_yf6zy7.png',
       addPurpleIcon:
         'https://res.cloudinary.com/dryh1nvhk/image/upload/v1675757030/dimension-technical-test-frontend/kanban-columns/todo/add_ap01pj.png',
-      cards: [
-        {
-          id: 'FLYTE-0',
-          title: '',
-          previewImage: '',
-          imageWidth: 0,
-          imageHeight: 0,
-          description: '',
-          topic: '',
-          users: [],
-          extraUsers: null,
-          numberOfComments: '0',
-          numberOfChecks: {
-            checked: '0',
-            total: '',
-          },
-          numberOfLinks: '0',
-          dateCreated: '',
-          status: '',
-        },
-      ],
+      cards: [],
     },
   ],
 };
