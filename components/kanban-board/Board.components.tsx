@@ -202,28 +202,35 @@ export const Board = () => {
                       {/*  */}
                     </div>
                     {/* Cards */}
-                    <div className="pt-[24px] flex flex-col gap-[23px] max-h-[680px] overflow-auto scroll-smooth scrollbar-hide">
+                    <div className="pt-[24px] flex flex-col gap-[23px] max-h-[700px] overflow-auto scroll-smooth scrollbar-hide">
                       {/* Card */}
                       {column.cards.map((card, index) => (
                         <Fragment key={card.id}>
-                          <Card
-                            id={card.id}
-                            title={card.title}
-                            previewImage={card.previewImage}
-                            imageWidth={card.imageWidth}
-                            imageHeight={card.imageHeight}
-                            description={card.description}
-                            topic={card.topic}
-                            users={card.users}
-                            extraUsers={card.extraUsers}
-                            numberOfComments={card.numberOfComments}
-                            checked={card.numberOfChecks.checked}
-                            totalChecked={card.numberOfChecks.total}
-                            numberOfLinks={card.numberOfLinks}
-                            dateCreated={card.dateCreated}
-                            status={card.status}
-                            index={index}
-                          />
+                          <div
+                            className={`${
+                              snapshot.isDraggingOver &&
+                              'bg-[#40809f] rounded-lg h-full w-full'
+                            }`}
+                          >
+                            <Card
+                              id={card.id}
+                              title={card.title}
+                              previewImage={card.previewImage}
+                              imageWidth={card.imageWidth}
+                              imageHeight={card.imageHeight}
+                              description={card.description}
+                              topic={card.topic}
+                              users={card.users}
+                              extraUsers={card.extraUsers}
+                              numberOfComments={card.numberOfComments}
+                              checked={card.numberOfChecks.checked}
+                              totalChecked={card.numberOfChecks.total}
+                              numberOfLinks={card.numberOfLinks}
+                              dateCreated={card.dateCreated}
+                              status={card.status}
+                              index={index}
+                            />
+                          </div>
                         </Fragment>
                       ))}
                       {provided.placeholder}
