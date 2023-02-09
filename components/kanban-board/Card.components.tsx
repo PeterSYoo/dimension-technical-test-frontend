@@ -50,14 +50,18 @@ export const Card = ({
   return (
     <>
       <Draggable key={id} index={index} draggableId={id.toString()}>
-        {(provided) => (
+        {(provided, snapshot) => (
           <div
             ref={provided.innerRef}
             {...provided.draggableProps}
             {...provided.dragHandleProps}
             className="flex flex-col -mb-[74px] w-[244px]"
           >
-            <div className="border border-[#EAEDF0] rounded-lg bg-white z-10 grid grid-rows-[1fr_40px]">
+            <div
+              className={`${
+                snapshot.isDragging && 'rotate-3'
+              } border border-[#EAEDF0] rounded-lg bg-white z-10 grid grid-rows-[1fr_40px]`}
+            >
               {/* Row 1 */}
               <div className="flex flex-col w-full py-[14px] px-[17px] gap-[12px]">
                 <div className="flex flex-col w-full gap-[6px]">
@@ -212,7 +216,11 @@ export const Card = ({
               </div>
               {/*  */}
             </div>
-            <div className="border border-[#EAEDF0] w-[236px] h-[74px] mx-auto rounded-lg relative bottom-[70px] z-0"></div>
+            <div
+              className={`${
+                snapshot.isDragging && 'rotate-3 mr-[100px] w-full'
+              } border border-[#EAEDF0] w-[236px] h-[74px] mx-auto rounded-lg relative bottom-[70px] z-0`}
+            ></div>
           </div>
         )}
       </Draggable>
