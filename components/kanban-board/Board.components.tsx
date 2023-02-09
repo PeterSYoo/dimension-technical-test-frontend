@@ -2,9 +2,48 @@ import { Fragment, useState } from 'react';
 import Image from 'next/image';
 import { Card } from './Card.components';
 import { initialData } from '@/data/initialData';
+import { newCards } from '@/data/newCards';
+
+interface IRandomCard {
+  title: string;
+}
 
 export const Board = () => {
   const [boardData, setBoardData] = useState(initialData);
+  const [counter, setCounter] = useState(7);
+
+  const addNewCard = (columnTitle: string) => {
+    // Looks for the specific column for which the card should be added to.
+    const column = boardData.columns.find(
+      (column) => column.title === columnTitle
+    );
+    if (!column) return;
+
+    // Gets a random card based on random index position from newCards object.
+    const randomCard = newCards[Math.floor(Math.random() * newCards.length)];
+
+    // Creates new board data by mapping over the existing columns, checking to see if any of the column title matches with columnTitle, and adds a random new card to the column.
+    const newBoardData = {
+      ...boardData,
+      columns: boardData.columns.map((col) => {
+        if (col.title === column.title) {
+          return {
+            ...col,
+            cards: [
+              ...col.cards,
+              { ...randomCard, id: counter, status: columnTitle },
+            ],
+          };
+        }
+        return col;
+      }),
+    };
+
+    // Sets the state to the new board data object with the newly added card.
+    setBoardData(newBoardData);
+    // Updates the counter state to be displayed in the card as part of `FLYTE-0`.
+    setCounter(counter + 1);
+  };
 
   return (
     <>
@@ -15,8 +54,8 @@ export const Board = () => {
             {/* Column */}
             <div className="flex flex-col w-[244px]">
               <div className="flex flex-col gap-[16px]">
-                <div className="flex justify-between items-center w-full">
-                  <div className="flex items-center gap-[12px]">
+                <div className="flex justify-between items-center w-[244px]">
+                  <div className="flex items-center gap-[12px] w-[244px]">
                     {/* Column Icon & Title */}
                     <div className="flex items-center gap-[8px]">
                       <Image
@@ -65,13 +104,19 @@ export const Board = () => {
                 {column.title === 'COMPLETED' ? (
                   <div className="w-full border-b-[2px] border-[#78C552]"></div>
                 ) : null}
-                {column.title === 'FAKE COLUMN' ? (
+                {column.title === 'FAKE COLUMN 1' ? (
+                  <div className="w-full border-b-[2px] border-[#111118]"></div>
+                ) : null}
+                {column.title === 'FAKE COLUMN 2' ? (
+                  <div className="w-full border-b-[2px] border-[#111118]"></div>
+                ) : null}
+                {column.title === 'FAKE COLUMN 3' ? (
                   <div className="w-full border-b-[2px] border-[#111118]"></div>
                 ) : null}
                 {/*  */}
               </div>
               {/* Cards */}
-              <div className="pt-[24px] flex flex-col gap-[23px] max-h-[680px] overflow-auto scrollbar-hide">
+              <div className="pt-[24px] flex flex-col gap-[23px] max-h-[680px] overflow-auto scroll-smooth scrollbar-hide">
                 {/* Card */}
                 {column.cards.map((card) => (
                   <Fragment key={card.id}>
@@ -97,16 +142,19 @@ export const Board = () => {
                 {/*  */}
                 {/* Add a Card Button */}
                 <div className="h-[40px] w-full">
-                  <button className="flex justify-center items-center border border-[#F2F5F7] rounded-lg gap-[8px] w-full h-[40px]">
+                  <button
+                    onClick={() => addNewCard(column.title)}
+                    className="flex justify-center items-center border border-[#F2F5F7] rounded-lg gap-[8px] w-full h-[40px]"
+                  >
                     <Image
                       width={24}
                       height={24}
                       src={column.addPurpleIcon}
                       alt="add-purple"
                     />
-                    <p className="font-bold text-sm text-[#4734FE]">
+                    <span className="font-bold text-sm text-[#4734FE]">
                       Add a Card
-                    </p>
+                    </span>
                   </button>
                 </div>
                 {/*  */}
