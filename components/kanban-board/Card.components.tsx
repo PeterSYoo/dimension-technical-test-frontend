@@ -2,7 +2,7 @@ import { Fragment } from 'react';
 import Image from 'next/image';
 
 interface ICardProps {
-  id: string;
+  id: number;
   title: string;
   previewImage: string;
   imageWidth: number;
@@ -44,7 +44,7 @@ export const Card = ({
           <div className="flex flex-col w-full py-[14px] px-[17px] gap-[12px]">
             <div className="flex flex-col w-full gap-[6px]">
               {/* FLYTE Id */}
-              <p className="text-[10px] text-[#7F8995]">{id}</p>
+              <p className="text-[10px] text-[#7F8995]">FLYTE-{id}</p>
               {/*  */}
               {/* Card Title */}
               <h1 className="font-bold">{title}</h1>
@@ -160,7 +160,7 @@ export const Card = ({
             </div>
             {/* Date Created || Done */}
             <div className="flex items-center gap-[4px]">
-              {dateCreated !== '' ? (
+              {dateCreated !== '' && status !== 'COMPLETED' ? (
                 <>
                   <div>
                     <Image
