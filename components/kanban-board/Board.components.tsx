@@ -124,7 +124,7 @@ export const Board = () => {
 
   return (
     <>
-      <div className="flex w-[1109px] gap-[36px] p-[24px] overflow-x-scroll flex-grow">
+      <div className="flex w-[1109px] flex-grow gap-[36px] overflow-x-scroll p-[24px]">
         {/* Columns */}
         <DragDropContext onDragEnd={onDragEnd}>
           {boardData.columns.map((column) => (
@@ -135,11 +135,11 @@ export const Board = () => {
                   <div
                     ref={provided.innerRef}
                     {...provided.droppableProps}
-                    className="flex flex-col w-[244px]"
+                    className="flex w-[244px] flex-col"
                   >
                     <div className="flex flex-col gap-[16px]">
-                      <div className="flex justify-between items-center w-[244px]">
-                        <div className="flex items-center gap-[12px] w-[244px]">
+                      <div className="flex w-[244px] items-center justify-between">
+                        <div className="flex w-[244px] items-center gap-[12px]">
                           {/* Column Icon & Title */}
                           <div className="flex items-center gap-[8px]">
                             <Image
@@ -148,12 +148,12 @@ export const Board = () => {
                               src={column.columnIcon}
                               alt={column.title}
                             />
-                            <p className="font-bold text-sm">{column.title}</p>
+                            <p className="text-sm font-bold">{column.title}</p>
                           </div>
                           {/*  */}
                           {/* # of Tasks */}
-                          <div className="w-[26px] h-[20px] bg-[#F7F9FA] flex justify-center items-center border border-[#EAEDF0] rounded-lg">
-                            <p className="font-bold text-xs">
+                          <div className="flex h-[20px] w-[26px] items-center justify-center rounded-lg border border-[#EAEDF0] bg-[#F7F9FA]">
+                            <p className="text-xs font-bold">
                               {column.cards.length}
                             </p>
                           </div>
@@ -202,14 +202,14 @@ export const Board = () => {
                       {/*  */}
                     </div>
                     {/* Cards */}
-                    <div className="pt-[24px] flex flex-col gap-[23px] max-h-[700px] overflow-auto scroll-smooth scrollbar-hide">
+                    <div className="flex max-h-[700px] flex-col gap-[23px] overflow-auto scroll-smooth pt-[24px] scrollbar-hide">
                       {/* Card */}
                       {column.cards.map((card, index) => (
                         <Fragment key={card.id}>
                           <div
                             className={`${
                               snapshot.isDraggingOver &&
-                              'bg-[#40809f] rounded-lg h-full w-full'
+                              'h-full w-full rounded-lg bg-[#F7F9FA]'
                             }`}
                           >
                             <Card
@@ -239,7 +239,7 @@ export const Board = () => {
                       <div className="h-[40px] w-full">
                         <button
                           onClick={() => addNewCard(column.title)}
-                          className="flex justify-center items-center border border-[#F2F5F7] rounded-lg gap-[8px] w-full h-[40px]"
+                          className="flex h-[40px] w-full items-center justify-center gap-[8px] rounded-lg border border-[#F2F5F7]"
                         >
                           <Image
                             width={24}
@@ -247,7 +247,7 @@ export const Board = () => {
                             src={column.addPurpleIcon}
                             alt="add-purple"
                           />
-                          <span className="font-bold text-sm text-[#4734FE]">
+                          <span className="text-sm font-bold text-[#4734FE]">
                             Add a Card
                           </span>
                         </button>

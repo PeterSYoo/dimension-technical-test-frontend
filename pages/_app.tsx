@@ -3,7 +3,7 @@ import type { AppProps } from 'next/app';
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <div className="h-screen w-screen bg-[#E5E5E5] flex justify-center items-center">
+    <div className="flex h-screen w-screen items-center justify-center bg-[#E5E5E5]">
       <Component {...pageProps} />
     </div>
   );

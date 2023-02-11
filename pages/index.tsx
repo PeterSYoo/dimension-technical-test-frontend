@@ -5,17 +5,17 @@ import { NavBar } from '@/components/NavBar.components';
 const Home = () => {
   return (
     <>
-      <div className="w-full h-full max-w-[1165px] max-h-[982px] bg-white rounded-[10px]">
-        <div className="grid grid-cols-[56px_1fr] w-full h-full">
+      <div className="h-full max-h-[982px] w-full max-w-[1165px] rounded-[10px] bg-white">
+        <div className="grid h-full w-full grid-cols-[56px_1fr]">
           {/* Left Column */}
-          <div className="w-full border-r border-[#EAEDF0] flex flex-col">
+          <div className="flex w-full flex-col border-r border-[#EAEDF0]">
             {/* NavBar */}
             <NavBar />
             {/*  */}
           </div>
           {/*  */}
           {/* Right Column */}
-          <div className="w-full h-full bg-white rounded-r-[10px] grid grid-rows-[53px_47px_1fr]">
+          <div className="grid h-full w-full grid-rows-[53px_47px_1fr] rounded-r-[10px] bg-white">
             {/* Header */}
             <Header />
             {/*  */}

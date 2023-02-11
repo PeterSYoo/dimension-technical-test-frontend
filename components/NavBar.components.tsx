@@ -5,7 +5,7 @@ export const NavBar = () => {
   return (
     <>
       {/* Logo */}
-      <div className="flex justify-center items-center h-[52px]">
+      <div className="flex h-[52px] items-center justify-center">
         <Link href="/">
           <Image
             width={23}
@@ -17,18 +17,18 @@ export const NavBar = () => {
       </div>
       {/*  */}
       {/* Line Border */}
-      <div className="w-[32px] border-b border-[#E9EBEF] mx-auto"></div>
+      <div className="mx-auto w-[32px] border-b border-[#E9EBEF]"></div>
       {/*  */}
       {/* Icons */}
-      <div className="w-full flex flex-col mt-[11px] gap-[16px]">
+      <div className="mt-[11px] flex w-full flex-col gap-[16px]">
         {/* AppCircle Icon */}
         <Link
           href="/"
-          className="w-full flex justify-center pr-[2px] items-center"
+          className="flex w-full items-center justify-center pr-[2px]"
         >
-          <div className="h-[23px] w-[2px] rounded-r-3xl bg-[#533BE5] relative right-[9px]"></div>
-          <button className="w-[32px] h-[32px] rounded-lg border border-[#533BE5] bg-[#F5F5F5]">
-            <div className="flex justify-center items-center h-full w-full">
+          <div className="relative right-[9px] h-[23px] w-[2px] rounded-r-3xl bg-[#533BE5]"></div>
+          <button className="h-[32px] w-[32px] rounded-lg border border-[#533BE5] bg-[#F5F5F5]">
+            <div className="flex h-full w-full items-center justify-center">
               <Image
                 width={24}
                 height={25}
@@ -42,11 +42,11 @@ export const NavBar = () => {
         {/* Dribble Icon */}
         <Link
           href="/"
-          className="w-full flex justify-center pr-[2px] items-center group"
+          className="group flex w-full items-center justify-center pr-[2px]"
         >
-          <div className="h-[23px] w-[2px] rounded-r-3xl bg-[#533BE5] relative right-[9px] invisible group-hover:visible"></div>
-          <button className="w-[32px] h-[32px] rounded-lg group-hover:border group-hover:border-[#533BE5] bg-[#F5F5F5]">
-            <div className="flex justify-center items-center h-full w-full">
+          <div className="invisible relative right-[9px] h-[23px] w-[2px] rounded-r-3xl bg-[#533BE5] group-hover:visible"></div>
+          <button className="h-[32px] w-[32px] rounded-lg bg-[#F5F5F5] group-hover:border group-hover:border-[#533BE5]">
+            <div className="flex h-full w-full items-center justify-center">
               <Image
                 width={24}
                 height={25}
@@ -60,11 +60,11 @@ export const NavBar = () => {
         {/* Buy Me a Coffee Icon */}
         <Link
           href="/"
-          className="w-full flex justify-center pr-[2px] items-center group"
+          className="group flex w-full items-center justify-center pr-[2px]"
         >
-          <div className="h-[23px] w-[2px] rounded-r-3xl bg-[#533BE5] relative right-[9px] invisible group-hover:visible"></div>
-          <button className="w-[32px] h-[32px] rounded-lg group-hover:border group-hover:border-[#533BE5] bg-[#F5F5F5]">
-            <div className="flex justify-center items-center h-full w-full">
+          <div className="invisible relative right-[9px] h-[23px] w-[2px] rounded-r-3xl bg-[#533BE5] group-hover:visible"></div>
+          <button className="h-[32px] w-[32px] rounded-lg bg-[#F5F5F5] group-hover:border group-hover:border-[#533BE5]">
+            <div className="flex h-full w-full items-center justify-center">
               <Image
                 width={24}
                 height={25}
@@ -78,11 +78,11 @@ export const NavBar = () => {
         {/* Atlassian Icon */}
         <Link
           href="/"
-          className="w-full flex justify-center pr-[2px] items-center group"
+          className="group flex w-full items-center justify-center pr-[2px]"
         >
-          <div className="h-[23px] w-[2px] rounded-r-3xl bg-[#533BE5] relative right-[9px] invisible group-hover:visible"></div>
-          <button className="w-[32px] h-[32px] rounded-lg group-hover:border group-hover:border-[#533BE5] bg-[#F5F5F5]">
-            <div className="flex justify-center items-center h-full w-full">
+          <div className="invisible relative right-[9px] h-[23px] w-[2px] rounded-r-3xl bg-[#533BE5] group-hover:visible"></div>
+          <button className="h-[32px] w-[32px] rounded-lg bg-[#F5F5F5] group-hover:border group-hover:border-[#533BE5]">
+            <div className="flex h-full w-full items-center justify-center">
               <Image
                 width={24}
                 height={25}
@@ -96,11 +96,11 @@ export const NavBar = () => {
         {/* Add Icon */}
         <Link
           href="/"
-          className="w-full flex justify-center pr-[2px] items-center group"
+          className="group flex w-full items-center justify-center pr-[2px]"
         >
-          <div className="h-[23px] w-[2px] rounded-r-3xl bg-[#533BE5] relative right-[9px] invisible group-hover:visible"></div>
-          <button className="w-[32px] h-[32px] rounded-lg group-hover:border group-hover:border-[#533BE5] bg-[#F5F5F5]">
-            <div className="flex justify-center items-center h-full w-full">
+          <div className="invisible relative right-[9px] h-[23px] w-[2px] rounded-r-3xl bg-[#533BE5] group-hover:visible"></div>
+          <button className="h-[32px] w-[32px] rounded-lg bg-[#F5F5F5] group-hover:border group-hover:border-[#533BE5]">
+            <div className="flex h-full w-full items-center justify-center">
               <Image
                 width={18}
                 height={19}

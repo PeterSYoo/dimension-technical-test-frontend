@@ -55,16 +55,16 @@ export const Card = ({
             ref={provided.innerRef}
             {...provided.draggableProps}
             {...provided.dragHandleProps}
-            className="flex flex-col -mb-[74px] w-[244px]"
+            className="-mb-[74px] flex w-[244px] flex-col"
           >
             <div
               className={`${
                 snapshot.isDragging && 'rotate-3'
-              } border border-[#EAEDF0] rounded-lg bg-white z-10 grid grid-rows-[1fr_40px]`}
+              } z-10 grid grid-rows-[1fr_40px] rounded-lg border border-[#EAEDF0] bg-white`}
             >
               {/* Row 1 */}
-              <div className="flex flex-col w-full py-[14px] px-[17px] gap-[12px]">
-                <div className="flex flex-col w-full gap-[6px]">
+              <div className="flex w-full flex-col gap-[12px] py-[14px] px-[17px]">
+                <div className="flex w-full flex-col gap-[6px]">
                   {/* FLYTE Id */}
                   <p className="text-[10px] text-[#7F8995]">FLYTE-{id}</p>
                   {/*  */}
@@ -85,20 +85,20 @@ export const Card = ({
                   <p className="text-[12px] text-[#7F8995]">{description}</p>
                   {/*  */}
                 </div>
-                <div className="flex justify-between items-center">
+                <div className="flex items-center justify-between">
                   {/* Topic */}
                   {topic === 'UI Design' ? (
-                    <div className="flex justify-center items-center h-[24px] px-[8px] rounded-[4px] bg-[#EAF0FF] text-xs font-bold text-[#2F6BFE]">
+                    <div className="flex h-[24px] items-center justify-center rounded-[4px] bg-[#EAF0FF] px-[8px] text-xs font-bold text-[#2F6BFE]">
                       {topic}
                     </div>
                   ) : null}
                   {topic === 'Research' ? (
-                    <div className="flex justify-center items-center h-[24px] px-[8px] rounded-[4px] bg-[#EDEBFF] text-xs font-bold text-[#8478FE]">
+                    <div className="flex h-[24px] items-center justify-center rounded-[4px] bg-[#EDEBFF] px-[8px] text-xs font-bold text-[#8478FE]">
                       {topic}
                     </div>
                   ) : null}
                   {topic === 'Planning' ? (
-                    <div className="flex justify-center items-center h-[24px] px-[8px] rounded-[4px] bg-[#F1F9EE] text-xs font-bold text-[#78C552]">
+                    <div className="flex h-[24px] items-center justify-center rounded-[4px] bg-[#F1F9EE] px-[8px] text-xs font-bold text-[#78C552]">
                       {topic}
                     </div>
                   ) : null}
@@ -119,7 +119,7 @@ export const Card = ({
                     ))}
                     {extraUsers !== null ? (
                       <>
-                        <div className="w-[30px] h-[30px] bg-[#CBD2D9] rounded-full border border-white -ml-[12px] flex justify-center items-center">
+                        <div className="-ml-[12px] flex h-[30px] w-[30px] items-center justify-center rounded-full border border-white bg-[#CBD2D9]">
                           <p className="text-sm text-[#656E77]">
                             {extraUsers}+
                           </p>
@@ -132,8 +132,8 @@ export const Card = ({
               </div>
               {/*  */}
               {/* Row 2 */}
-              <div className="w-full border-t border-[#EAEDF0] px-[17px] flex justify-between items-center">
-                <div className="flex items-center gap-[8px] h-full">
+              <div className="flex w-full items-center justify-between border-t border-[#EAEDF0] px-[17px]">
+                <div className="flex h-full items-center gap-[8px]">
                   {/* Comments */}
                   {numberOfComments !== '0' ? (
                     <div className="flex h-full items-center gap-[4px]">
@@ -218,8 +218,8 @@ export const Card = ({
             </div>
             <div
               className={`${
-                snapshot.isDragging && 'rotate-3 mr-[100px] w-full'
-              } border border-[#EAEDF0] w-[236px] h-[74px] mx-auto rounded-lg relative bottom-[70px] z-0`}
+                snapshot.isDragging && 'mr-[100px] w-full rotate-3'
+              } relative bottom-[70px] z-0 mx-auto h-[74px] w-[236px] rounded-lg border border-[#EAEDF0]`}
             ></div>
           </div>
         )}
