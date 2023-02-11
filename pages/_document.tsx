@@ -25,6 +25,7 @@ export default function Document() {
         type="font/woff2"
         crossOrigin="anonymous"
       />
+      <title>Dimension Technical Test - Peter</title>
       <body>
         <Main />
         <NextScript />
